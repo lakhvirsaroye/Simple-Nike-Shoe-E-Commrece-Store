@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("nikewhite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+  
+ /* NAVBAR */
+nav {
+    display: inline-block;
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.left {
+    display: inline-block;
+}
+
+.left img {
+    display: flex;
+    width: 80px;
+    margin: 20px 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 55%;
+    top: 0;
+    font: 1.4rem sans-serif;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+    margin: 20px 5px;
+}
+
+ul li {
+    margin-top: 3px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul li a {
+    padding: 5px 30px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 7px;
+    box-shadow: 2px 2px 20px black;
+}
+
+    /* CONTAINER */
+.container {
+    width: 600px;
+    height: 500px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 150px;
+    left: 70px;
+}
+
+h2 {
+    padding: 20px 20px 0px 20px;
+    font-size: 2.4rem;
+    font-style: inherit;
+    font-weight: 100;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    padding: 0px 20px;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    padding: 0px 20px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    background-color: #c2de44;
+    color: rgb(0, 0, 0);
+    padding: 13px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 60px 30px;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 3px 3px 20px #ffffff;
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 20px #000000;
+}
+
+.btton img {
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 30px;
+}
+
+
+
+  /* NOW TIME TO MAKE IT RESPONSIVE */
+
+@media screen and (min-width: 971px) and (max-width: 1385px) {
+    .right {
+        display: flex;
+        position: absolute;
+        left: 35%;
+        top: 0;
+    }
+
+    h2 {
+        padding: 40px 20px 0px 20px;
+        font-size: 2.9rem;
+        font-weight: 100;
+    }
+
+    h1 {
+        padding: 0px 20px;
+        font-size: 4.4rem;
+    }
+
+    p {
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 23px 35px;
+        font-size: 1.4rem;
+    }
+
+    .btton img {
+        margin-left: 50px;
+        height: 50px;
+    }
+
+    .contactus {
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 970px) {
+    .container {
+        position: absolute;
+        top: 270px;
+        left: 130px;
+    }
+
+    h2 {
+        padding: 40px 20px 0px 20px;
+        font-size: 3.5rem;
+        font-weight: 200;
+    }
+
+    h1 {
+        padding: 0px 20px;
+        font-size: 5.4rem;
+        font-weight: 700;
+    }
+
+    p {
+        padding: 18px 20px;
+
+    }
+
+    button {
+        padding: 33px 45px;
+        font-size: 2.0rem;
+    }
+
+    .btton img {
+        margin-left: 70px;
+        height: 80px;
+    }
+
+    .contactus {
+        display: none;
+
+    }
+
+}
+
+/* COMPLETE  :) */
